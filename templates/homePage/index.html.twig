@@ -1,28 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('homePage/static/index.css') }}">
-    <title>Alternanza</title>
-</head>
-<body>
+{% set whereami = "Accueil" %}
 
+{{ include('/base.html.twig')}}
+<head>
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+</head>
+<body style="background-image:url({{ asset('img/background_mountain.png')}})">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-3 text-center">
-                <img src="templates/homePage/static/img/logo.png" width="140" height="140" class="mx-auto d-block logo" alt="Alternanza">
+                <img src={{ asset('img/logo.png')}} width="140" height="140" class="mx-auto d-block logo" alt="Alternanza">
             </div>
 
             <div class="col-md-6 text-center">
-                <div class="Titre font-weight-bold display-4 color-white">Trouve ton<br>Alternance</div>
+                <div class="Titre font-weight-bold display-4 color-white"><h1>Trouve ton<br>Alternance</h1></div>
             </div>
             <div class="col-md-3 text-right">
                 <div class="d-flex justify-content-center">
-                <button class="btn bouton-espace btn-custom no-wrap color-white "><b>Espace école</b></button>
-                    <span>&nbsp;</span>
-                <button class="btn bouton-espace btn-custom no-wrap color-white  "><b>Espace entreprise</b></button>
+                <span class="btn bouton-espace btn-custom no-wrap color-white "><b>Espace école</b></span>
+                <span class="btn bouton-espace btn-custom no-wrap color-white  "><b>Espace entreprise</b></span>
                 </div>
             </div>
         </div>
@@ -32,12 +27,12 @@
 
 
     <div class="container_custom">
-        <div class="left-panel_custom d-flex justify-content-center align-items-center">
+        <span onclick="window.location='/intern'" class="left-panel_custom d-flex justify-content-center align-items-center">
             <div class="text_custom color-white">
                 <h2>Trouve ton apprentis</h2>
             </div>
-        </div>
-        <div class="right-panel_custom d-flex justify-content-center align-items-center">
+        </span>
+        <div onclick="window.location='/company'" class="right-panel_custom d-flex justify-content-center align-items-center">
             <div class="text_custom color-white">
                 <h2>Trouve ton entreprise</h2>
             </div>
@@ -45,4 +40,3 @@
     </div>
 
 </body>
-</html>

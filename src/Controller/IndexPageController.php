@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class indexPageController extends AbstractController
+class IndexPageController extends AbstractController
 {
     /**
      * [Description for homePage]

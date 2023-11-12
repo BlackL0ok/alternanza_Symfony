@@ -7,8 +7,13 @@ controllers:
 index_home_page:
     path: /
     # the controller value has the format 'controller_class::method_name'
-    controller: App\Controller\indexPageController::homePage
+    controller: App\Controller\IndexPageController::homePage
 
     # if the action is implemented as the __invoke() method of the
     # controller class, you can skip the '::method_name' part:
     # controller: App\Controller\BlogController
+
+presentation_page:
+    path: /presentation
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PresentationPageController::presentationPage
