@@ -1,23 +1,30 @@
-{{ include('../base.html.twig')}}
+{% set whereami = "Présentation" %}
+{{ include('base.html.twig')}}
+
+<head>
+    <link rel="stylesheet" href="{{ asset('css/presentation/presentation.css') }}">
+</head>
+
 <body>
-<h1>{{ whatSite}}</h1>
+
+<hr />
+<h1 class="centrage color-texte">
+Ce qu'on vous propose
+</h1>
+
 <div class="image-container">
     <!-- Trois images alignées horizontalement -->
-    <img src="https://via.placeholder.com/150" alt="Image 1" width="150" height="150">
-    <img src="https://via.placeholder.com/150" alt="Image 2" width="150" height="150">
-    <img src="https://via.placeholder.com/150" alt="Image 3" width="150" height="150">
+    <img src={{img1}} alt={{alt1}} width="auto" height="auto">
+    <img src={{img2}} alt={{alt2}} width="auto" height="auto">
+    <img src={{img3}} alt={{alt3}} width="auto" height="auto">
 </div>
 
+<h3 class="centrage color-texte">{{text}}</h3>
 <div class="button-container">
     <!-- Bouton centré horizontalement -->
-    <button type="button" class="btn btn-primary">Mon Bouton</button>
+    <span class="contactez">En savoir plus</span>
 </div>
 
 <!-- Inclure Bootstrap.min.js et jQuery si nécessaire -->
 
 </body>
-
-<!-- 
-Description:
-Le controllers donnera le lien des 3 images à afficher qui seront ensuite mis "naïvement" par twig
--->

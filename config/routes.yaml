@@ -15,5 +15,4 @@ index_home_page:
 
 presentation_page:
     path: /presentation
-    # the controller value has the format 'controller_class::method_name'
-    controller: App\Controller\PresentationPageController::presentationPage
+    controller: 'App\Controller\PresentationPageController::presentationpage'
