@@ -67,10 +67,11 @@ body {
     text-align: center;
 }
 .bouton-espace {
+    margin-bottom: 6vh;
     align-items: center;
     background-color: #b2b6f4;
     border-radius: 20px;
-
+    
 }
 .no-wrap {
     white-space: nowrap;
@@ -90,5 +91,8 @@ body {
 }
 .logo{
     margin-top: 1vh;
-    margin-bottom: 1vh;
+    left:0;
+}
+.justify-content-pace-evenly{
+    justify-content: space-evenly;
 }
