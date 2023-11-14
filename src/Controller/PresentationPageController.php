@@ -7,15 +7,17 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
 
 class PresentationPageController extends AbstractController
 {
+    
     /**
-     * @Route("/{page}", name="presentation_page")
-     * page == intern || page == company
-     * @param string $page
+     * [Description for presentationPage]
+     *
+     * @param Request $request
+     * change link of files du to variables
      * @return Response
+     * 
      */
     public function presentationPage(Request $request): Response
     {   
