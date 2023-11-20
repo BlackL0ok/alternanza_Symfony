@@ -6,21 +6,18 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
     <h2 class="text-center">Identifiant</h2>
-    <form class="login-form" action="GET" method="post">
-        <div class="mb-3">
-            <label for="username" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="_email" placeholder="Enter your email" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="_password" placeholder="Enter your Password" required>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="remember_me" name="_remember_me">
-            <label class="form-check-label" for="remember_me">Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-login bouton-login">CONNEXION</button>
-    </form>
+    {{ form_start(formLogin) }}
+    <div class="mb-3">
+        {{ form_row(formLogin.username) }}
+    </div>
+    <div class="mb-3">
+        {{ form_row(formLogin.password) }}
+    </div>
+    <div class="mb-3 form-check">
+        {{ form_row(formLogin.remember_me) }}
+    </div>
+    <button type="submit" class="btn btn-login bouton-login">CONNEXION</button>
+{{ form_end(formLogin) }}
     <div class="text-center mt-3">
         <a href="">Vous n'avez pas de compte ?</a> |
         <a href="">Mot de passe oublié?</a>

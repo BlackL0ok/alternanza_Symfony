@@ -20,4 +20,4 @@ presentation_page:
 login_page:
     path: /login
     defaults:
-        _controller: 'App\Controller\AuthPageController::home'
+        _controller: 'App\Controller\AuthPageController::login'
