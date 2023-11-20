@@ -1,0 +1,26 @@
+.modal-login, .bouton-login {
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Arial', sans-serif;
+}
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+.login-form {
+    margin-top: 20px;
+}
+.form-control {
+    border-radius: 20px;
+}
+.btn-login {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #34eb9e; /* Changez ceci selon votre préférence */
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }

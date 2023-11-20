@@ -67,11 +67,14 @@ body {
 .Titre {
     text-align: center;
 }
-.bouton-espace {
-    margin-bottom: 6vh;
+.btn-custom, .bouton-menu {
+    margin-bottom: 6vh !important;
     align-items: center;
-    background-color: #b2b6f4;
-    border-radius: 20px;
+    background-color: #b2b6f4 !important;
+    border-radius: 20px !important;
+    background-color: #989eee !important;
+    border-color: #989eee !important;
+    color:aliceblue !important;
     
 }
 .no-wrap {
@@ -79,10 +82,6 @@ body {
 }
 .bouton-menu{
     padding-right: 100vw;
-}
-.btn-custom:hover{
-    background-color: #989eee; /* Changez la couleur en fonction de votre préférence */
-    border-color: #3e43a4; /* Changez la couleur du texte en fonction de votre préférence */
 }
 
 .btn-block{

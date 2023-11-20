@@ -1,47 +1,15 @@
-{# login.html.twig #}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(to right, #989eee,#B4B7E7, #C7C7C7D3 );
-            font-family: 'Arial', sans-serif;
-        }
-        .login-container {
-            max-width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            background: transparent;
-            border-radius: 5px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .login-form {
-            margin-top: 20px;
-        }
-        .form-control {
-            border-radius: 20px;
-        }
-        .btn-login {
-            width: 100%;
-            border-radius: 20px;
-            padding: 10px;
-            background-color: #34eb9e; /* Changez ceci selon votre préférence */
-            border: none;
-        }
-    </style>
-</head>
-<body>
 
-<div class="login-container">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+<link href={{ asset('css/loginModal/loginPage.css') }} rel="stylesheet">
+
+<div class="modal-header">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
     <h2 class="text-center">Identifiant</h2>
     <form class="login-form" action="GET" method="post">
         <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="_username" placeholder="Enter your Username" required>
+            <label for="username" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="_email" placeholder="Enter your email" required>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
@@ -51,7 +19,7 @@
             <input type="checkbox" class="form-check-input" id="remember_me" name="_remember_me">
             <label class="form-check-label" for="remember_me">Remember me</label>
         </div>
-        <button type="submit" class="btn btn-login">CONNEXION</button>
+        <button type="submit" class="btn btn-login bouton-login">CONNEXION</button>
     </form>
     <div class="text-center mt-3">
         <a href="">Vous n'avez pas de compte ?</a> |
@@ -61,5 +29,4 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
