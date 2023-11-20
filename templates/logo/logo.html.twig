@@ -1,4 +1,10 @@
-<link rel="stylesheet" href="{{ asset('css/logo/logo.css') }}">
+
+{% if whereami == "Accueil" %}
+<link rel="stylesheet" href="{{ asset('css/logo/logo_index.css') }}">
 <div class="col-md-3 text-center">
     <img src={{ asset('img/logo.png')}} width="140" height="140" class="mx-auto d-block logo" alt="Alternanza">
 </div>
+{% else %}
+<link rel="stylesheet" href="{{ asset('css/logo/logo_presentation.css') }}">
+<img src={{ asset('img/logo.png')}} class="d-block logo" alt="Alternanza">
+{% endif %}
