@@ -16,3 +16,8 @@ index_home_page:
 presentation_page:
     path: /presentation
     controller: 'App\Controller\PresentationPageController::presentationpage'
+
+login_page:
+    path: /login
+    defaults:
+        _controller: 'App\Controller\AuthPageController::home'
