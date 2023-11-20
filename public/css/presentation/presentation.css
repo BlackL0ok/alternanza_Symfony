@@ -38,10 +38,13 @@ body {
     color:#1e1457;
 }
 .btn-savoir-plus{
-    background-color: #3f328b !important;
-    border-color: #1e1457 !important;
+    background-color: #6655c2 !important;
     border-radius: 10px;
     color:aliceblue;
+}
+.btn-savoir-plus:hover{
+    color:aliceblue;
+    border-color: aliceblue;
 }
 hr {
     border: none;
@@ -57,4 +60,11 @@ hr:after {
     padding: 0 4px;
     position: relative;
     top: -13px;
+}
+.color-bar{
+    display:block;
+    position: fixed;
+    background-color: #3f328b;
+    height: 5em;
+    width: 100%;
 }

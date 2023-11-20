@@ -26,9 +26,9 @@ class PresentationPageController extends AbstractController
         $who = $request->query->get('who');
         if($who ==="company"){
             $link = [
-                "img1" => "img/img_presentation_alternant/img_1.png",
-                "img2" => "img/img_presentation_alternant/img_2.png",
-                "img3" => "img/img_presentation_alternant/img_3.png",
+                "img1" => "img/img_presentation_intern/img_1.png",
+                "img2" => "img/img_presentation_intern/img_2.png",
+                "img3" => "img/img_presentation_intern/img_3.png",
                 "alt1" => "Préparation des Candidat(e)s",
                 "alt2" => "Placement en Alternance",
                 "alt3" => "Suivi Continu",
