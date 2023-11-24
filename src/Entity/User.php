@@ -41,7 +41,7 @@ class User implements UserInterface
         return $this->id; 
     }
 
-    public function getRoles()
+    public function getRoles(): array
     {
         return $this->roles;
     }
@@ -49,12 +49,6 @@ class User implements UserInterface
     public function getPassword()
     {
         return $this->password;
-    }
-
-    public function getSalt()
-    {
-        // Pas nécessaire si vous utilisez un algorithme de hachage moderne
-        return null;
     }
 
     public function getUsername()

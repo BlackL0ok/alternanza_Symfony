@@ -5,24 +5,28 @@
 <div class="modal-header">
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
-    <h2 class="text-center">Identifiant</h2>
-    {{ form_start(formLogin) }}
-    <div class="mb-3">
-        {{ form_row(formLogin.username) }}
+<form class="ui form">
+    <i class="user circle outline icon medium" style="visibility: visible;"></i>
+    <div class="field">
+        <label>
+            Username
+            <input type="text" name="username" placeholder="Username">
+        </label>
     </div>
-    <div class="mb-3">
-        {{ form_row(formLogin.password) }}
+    <div class="field">
+        <label>
+            Password
+            <input type="text" name="password" placeholder="Password">
+        </label>
     </div>
-    <div class="mb-3 form-check">
-        {{ form_row(formLogin.remember_me) }}
+    <div class="field">
+        <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden">
+            <label>I agree to the Terms and Conditions</label>
+        </div>
     </div>
-    <button type="submit" class="btn btn-login bouton-login">CONNEXION</button>
-{{ form_end(formLogin) }}
-    <div class="text-center mt-3">
-        <a href="">Vous n'avez pas de compte ?</a> |
-        <a href="">Mot de passe oublié?</a>
-    </div>
-</div>
+    <button class="ui button green" type="submit">Envoyer</button>
+</form>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
